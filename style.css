@@ -1,0 +1,98 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+/* Question Styling */
+.question-container {
+    text-align: center;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Options Styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn, .final-btn {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.option-btn:hover, .final-btn:hover {
+    background-color: #f0f8ff;
+}
+
+.option-btn.selected {
+    background-color: #007BFF;
+    color: white;
+    border-color: #0056b3;
+}
+
+.final-btn.selected {
+    background-color: #007BFF;
+    color: white;
+    border-color: #0056b3;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn, .next-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:disabled, .next-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.back-btn:hover:not(:disabled), .next-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
